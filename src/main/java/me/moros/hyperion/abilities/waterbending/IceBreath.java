@@ -31,7 +31,7 @@ import com.projectkorra.projectkorra.command.Commands;
 import com.projectkorra.projectkorra.region.RegionProtection;
 import com.projectkorra.projectkorra.util.DamageHandler;
 import com.projectkorra.projectkorra.util.MovementHandler;
-import com.projectkorra.projectkorra.util.ParticleEffect;
+import me.moros.hyperion.util.ParticleEffect;
 import com.projectkorra.projectkorra.util.TempBlock;
 import com.projectkorra.projectkorra.util.TempPotionEffect;
 import com.projectkorra.projectkorra.waterbending.ice.PhaseChange;

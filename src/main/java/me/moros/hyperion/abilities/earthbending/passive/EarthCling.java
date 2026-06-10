@@ -23,7 +23,7 @@ import com.projectkorra.projectkorra.ability.AddonAbility;
 import com.projectkorra.projectkorra.ability.EarthAbility;
 import com.projectkorra.projectkorra.ability.PassiveAbility;
 import com.projectkorra.projectkorra.attribute.Attribute;
-import com.projectkorra.projectkorra.util.ParticleEffect;
+import me.moros.hyperion.util.ParticleEffect;
 import me.moros.hyperion.Hyperion;
 import me.moros.hyperion.abilities.earthbending.EarthGlove;
 import me.moros.hyperion.methods.CoreMethods;

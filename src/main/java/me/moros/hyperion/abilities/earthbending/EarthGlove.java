@@ -26,7 +26,7 @@ import com.projectkorra.projectkorra.ability.util.Collision;
 import com.projectkorra.projectkorra.attribute.Attribute;
 import com.projectkorra.projectkorra.command.Commands;
 import com.projectkorra.projectkorra.util.DamageHandler;
-import com.projectkorra.projectkorra.util.ParticleEffect;
+import me.moros.hyperion.util.ParticleEffect;
 import me.moros.hyperion.Hyperion;
 import me.moros.hyperion.methods.CoreMethods;
 import org.bukkit.Location;

@@ -20,7 +20,7 @@
 package me.moros.hyperion.util;
 
 import com.projectkorra.projectkorra.ability.CoreAbility;
-import com.projectkorra.projectkorra.util.ParticleEffect;
+import me.moros.hyperion.util.ParticleEffect;
 import me.moros.hyperion.Hyperion;
 import me.moros.hyperion.methods.CoreMethods;
 import org.bukkit.Location;

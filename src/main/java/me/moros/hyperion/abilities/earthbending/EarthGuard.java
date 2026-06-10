@@ -26,7 +26,7 @@ import com.projectkorra.projectkorra.attribute.Attribute;
 import com.projectkorra.projectkorra.command.Commands;
 import com.projectkorra.projectkorra.earthbending.EarthArmor;
 import com.projectkorra.projectkorra.region.RegionProtection;
-import com.projectkorra.projectkorra.util.ParticleEffect;
+import me.moros.hyperion.util.ParticleEffect;
 import com.projectkorra.projectkorra.util.TempBlock;
 import com.projectkorra.projectkorra.util.TempPotionEffect;
 import me.moros.hyperion.Hyperion;
