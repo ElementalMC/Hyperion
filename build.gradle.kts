@@ -13,6 +13,7 @@ java {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
     maven("https://jitpack.io")
@@ -20,8 +21,8 @@ repositories {
 
 dependencies {
     implementation("org.bstats", "bstats-bukkit", "3.0.2")
-    compileOnly("org.spigotmc:spigot-api:1.20.6-R0.1-SNAPSHOT")
-    compileOnly("com.github.ProjectKorra:ProjectKorra:v1.11.2")
+    compileOnly("org.spigotmc:spigot-api:1.21.11-R0.2-SNAPSHOT")
+    compileOnly("com.projectkorra:projectkorra:1.13.0")
 }
 
 tasks {
