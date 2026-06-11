@@ -83,6 +83,9 @@ public class LavaDisk extends LavaAbility implements AddonAbility, MultiAbility 
 
 	public LavaDisk(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (hasAbility(player, LavaDisk.class) || !bPlayer.canBend(this)) {
 			return;

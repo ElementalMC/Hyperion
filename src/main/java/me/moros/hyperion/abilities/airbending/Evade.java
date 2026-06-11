@@ -37,6 +37,9 @@ public class Evade extends AirAbility implements AddonAbility {
 
 	public Evade(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!player.isOnGround() || player.getEyeLocation().getBlock().isLiquid() || hasAbility(player, Evade.class) || !bPlayer.canBend(this)) {
 			return;

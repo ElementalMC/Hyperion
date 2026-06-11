@@ -48,6 +48,9 @@ public class EarthGuardWall extends EarthAbility implements AddonAbility {
 
 	public EarthGuardWall(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (bPlayer.isOnCooldown(this) || !bPlayer.canBendIgnoreCooldowns(getAbility(EarthGuard.class))) {
 			return;

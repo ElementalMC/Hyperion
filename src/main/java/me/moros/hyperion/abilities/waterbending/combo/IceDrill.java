@@ -70,6 +70,9 @@ public class IceDrill extends IceAbility implements AddonAbility, ComboAbility {
 
 	public IceDrill(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (hasAbility(player, IceDrill.class) || !bPlayer.canBendIgnoreBinds(this) || !bPlayer.canIcebend()) {
 			return;

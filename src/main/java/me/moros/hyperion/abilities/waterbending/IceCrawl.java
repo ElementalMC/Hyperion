@@ -77,6 +77,9 @@ public class IceCrawl extends IceAbility implements AddonAbility {
 
 	public IceCrawl(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!bPlayer.canBend(this)) {
 			return;

@@ -74,6 +74,9 @@ public class EarthShot extends EarthAbility implements AddonAbility {
 
 	public EarthShot(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (hasAbility(player, EarthShot.class) || !bPlayer.canBend(this)) {
 			return;

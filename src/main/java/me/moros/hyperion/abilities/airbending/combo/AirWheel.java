@@ -58,6 +58,9 @@ public class AirWheel extends AirAbility implements AddonAbility, ComboAbility {
 
 	public AirWheel(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!hasAbility(player, AirScooter.class) || hasAbility(player, AirWheel.class) || !bPlayer.canBendIgnoreBinds(this)) {
 			return;

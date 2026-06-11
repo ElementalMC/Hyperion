@@ -82,6 +82,9 @@ public class FireWave extends FireAbility implements AddonAbility, ComboAbility 
 
 	public FireWave(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!bPlayer.canBendIgnoreBinds(this)) {
 			return;
