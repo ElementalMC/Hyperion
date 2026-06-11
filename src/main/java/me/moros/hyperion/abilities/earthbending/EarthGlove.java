@@ -68,6 +68,9 @@ public class EarthGlove extends EarthAbility implements AddonAbility {
 
 	public EarthGlove(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (getAbilities(player, EarthGlove.class).size() >= 2 || !bPlayer.canBendIgnoreCooldowns(this)) {
 			return;

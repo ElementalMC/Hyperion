@@ -46,6 +46,9 @@ public class Smokescreen extends ChiAbility implements AddonAbility {
 
 	public Smokescreen(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!bPlayer.canBend(this)) {
 			return;

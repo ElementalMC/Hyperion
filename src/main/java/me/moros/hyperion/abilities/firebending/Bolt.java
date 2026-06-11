@@ -56,6 +56,9 @@ public class Bolt extends LightningAbility implements AddonAbility {
 
 	public Bolt(final Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (isWater(player.getEyeLocation().getBlock()) || hasAbility(player, Bolt.class) || !bPlayer.canBend(this)) {
 			return;

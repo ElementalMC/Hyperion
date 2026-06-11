@@ -71,6 +71,9 @@ public class FlameRush extends FireAbility implements AddonAbility {
 
 	public FlameRush(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 		if (!bPlayer.canBend(this) || hasAbility(player, FlameRush.class)) {
 			return;
 		}

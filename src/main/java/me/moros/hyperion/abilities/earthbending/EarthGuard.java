@@ -76,6 +76,9 @@ public class EarthGuard extends EarthAbility implements AddonAbility {
 
 	public EarthGuard(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (hasAbility(player, EarthGuard.class) || !bPlayer.canBend(this)) {
 			return;

@@ -43,6 +43,9 @@ public class EarthShards extends EarthAbility implements AddonAbility, ComboAbil
 
 	public EarthShards(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!bPlayer.canBendIgnoreBinds(this)) {
 			return;

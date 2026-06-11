@@ -77,6 +77,9 @@ public class MetalCable extends MetalAbility implements AddonAbility {
 
 	public MetalCable(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (hasAbility(player, MetalCable.class)) {
 			getAbility(player, MetalCable.class).attemptLaunchTarget();

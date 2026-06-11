@@ -80,6 +80,9 @@ public class IceBreath extends IceAbility implements AddonAbility {
 
 	public IceBreath(Player player) {
 		super(player);
+		if (bPlayer == null) {
+			return;
+		}
 
 		if (!bPlayer.canBend(this)) {
 			return;
