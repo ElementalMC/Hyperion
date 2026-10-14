@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "me.moros"
-version = "1.7.3"
+version = "1.8.1"
 
 java {
     toolchain {
@@ -22,7 +22,7 @@ repositories {
 dependencies {
     implementation("org.bstats:bstats-bukkit:3.0.2")
     compileOnly("io.papermc.paper:paper-api:26.2.build.133-stable")
-    compileOnly("com.projectkorra:projectkorra:1.13.0")
+    compileOnly("com.projectkorra:projectkorra:1.13.2")
 }
 
 tasks {
@@ -43,6 +43,7 @@ tasks {
         isReproducibleFileOrder = true
     }
     named<Copy>("processResources") {
+        inputs.property("pluginVersion", project.version)
         expand("pluginVersion" to project.version)
     }
 }
