@@ -1,9 +1,8 @@
 # Building Hyperion
 
 Hyperion is compiled against **ProjectKorra 1.13.0** and **Paper 26.2** (Minecraft 26.2+)
-and needs **JDK 25** to build, since the Paper 26.x API is Java 25 bytecode. Hyperion's
-own classes are still emitted as Java 21 bytecode because the shadow plugin's `minimize()`
-cannot read Java 25 class files yet; the jar runs fine on Java 25.
+and targets **Java 25**. The Gradle wrapper (9.7.1) runs on JDK 25, so a single JDK 25
+install is all you need.
 
 ProjectKorra `1.13.0` is not yet published to Maven Central (Central currently
 only has up to `1.12.x`). Until it is released there, you must build it from the
