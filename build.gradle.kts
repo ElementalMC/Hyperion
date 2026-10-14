@@ -8,20 +8,20 @@ version = "1.7.3"
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
 repositories {
     mavenLocal()
     mavenCentral()
-    maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://jitpack.io")
 }
 
 dependencies {
     implementation("org.bstats", "bstats-bukkit", "3.0.2")
-    compileOnly("org.spigotmc:spigot-api:1.21.11-R0.2-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:26.2.build.133-stable")
     compileOnly("com.projectkorra:projectkorra:1.13.0")
 }
 
@@ -37,6 +37,9 @@ tasks {
         dependsOn(shadowJar)
     }
     withType<JavaCompile> {
+        // Paper 26.x API needs a JDK 25 compiler, but the shadow plugin's minimize() can't read Java 25
+        // class files yet, so Hyperion's own classes stay on Java 21 bytecode (runs fine on Java 25).
+        options.release.set(21)
         options.compilerArgs.addAll(listOf("-Xlint:unchecked", "-Xlint:deprecation"))
         options.encoding = "UTF-8"
     }
